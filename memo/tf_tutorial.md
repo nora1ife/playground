@@ -51,6 +51,31 @@ show_batch(temp_dataset)
 ```
 連動して、これもいまいちわからん。
 
+## images
+pathlibはreplaceが効かない
+```
+image_rel = pathlib.Path(image_path).relative_to(data_root).replace('\', '/')
+
+SyntaxError: EOL while scanning string literal
+```
+
+```
+ def caption_image(image_path):
+----> 4     image_rel = pathlib.Path(image_path).relative_to(data_root).replace('\\', '/')
+      5     print(image_rel)
+      6     print(attributions[str(image_rel)])
+
+TypeError: replace() takes 2 positional arguments but 3 were given
+```
+
+```
+a =pathlib.Path(image_path).relative_to(data_root).replace('\\', '/')
+
+TypeError: replace() takes 2 positional arguments but 3 were given
+```
+
+
+
 
 
 

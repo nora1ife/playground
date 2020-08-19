@@ -73,9 +73,3 @@ a =pathlib.Path(image_path).relative_to(data_root).replace('\\', '/')
 
 TypeError: replace() takes 2 positional arguments but 3 were given
 ```
-
-
-
-
-
-

@@ -11,9 +11,13 @@
 - ニューラルネットはなぜ0~1にスケールする必要があるのか
   - 正規化するため。[詳しい解説](https://qiita.com/ryouka0122/items/a7fbad253680bb7f815e)
 - tf.keras.layers.Dense 調べるべし
+  - 全結合層
 - softmaxの活性化関数がなんかよくわからん
+  - とりあえず、活性化関数の一種という認識で止める。
 - plt.imshow()のplt.cm.binaryはなに？
+  - カラーマップの色のこと、binaryは色
 - xtickes, ylimなどなど調べる
+  - 軸のラベルのこと
 - [plot.grid(False)をplot.grid = False と一度してしまうと、再起動しないと動くようにならない。](https://forum.omz-software.com/topic/906/mathplotlib-grid)
 
 ## csv
@@ -73,3 +77,46 @@ a =pathlib.Path(image_path).relative_to(data_root).replace('\\', '/')
 
 TypeError: replace() takes 2 positional arguments but 3 were given
 ```
+## CNN
+ - modelの層はなんであの順番で決められているのか？
+   -  ゼロから学ぶディープラーニング読め（第７章）
+
+## image classification
+```
+fig, axes = plt.subplots(1, 5, figsize=(20,20))
+```
+これ↑なんで二つに分けられる？？
+```
+>>> plt.subplots(1, 5, figsize=(20,20))
+(<Figure size 2000x2000 with 5 Axes>, array([<matplotlib.axes._subplots.AxesSubplot object at 0x00000201F4EB8FA0>,
+       <matplotlib.axes._subplots.AxesSubplot object at 0x00000201F70263A0>,
+       <matplotlib.axes._subplots.AxesSubplot object at 0x00000201F70567C0>,
+       <matplotlib.axes._subplots.AxesSubplot object at 0x00000201F7082BE0>,
+       <matplotlib.axes._subplots.AxesSubplot object at 0x00000201F70B1160>],
+      dtype=object))
+>>> fig, axes = plt.subplots(1, 5, figsize=(20,20))
+>>> axes
+array([<matplotlib.axes._subplots.AxesSubplot object at 0x00000201F70F86A0>,
+       <matplotlib.axes._subplots.AxesSubplot object at 0x00000201F7120A30>,
+       <matplotlib.axes._subplots.AxesSubplot object at 0x00000201F56EEE50>,
+       <matplotlib.axes._subplots.AxesSubplot object at 0x00000201F57272B0>,
+       <matplotlib.axes._subplots.AxesSubplot object at 0x00000201F57546D0>],
+      dtype=object)
+>>> fig
+<Figure size 2000x2000 with 5 Axes>
+```
+ということらしい。
+
+- 水平方向の回転が、垂直方向の回転に見える。なぜ？？
+
+## image_seggmentation
+```
+from tensorflow_examples.models.pix2pix import pix2pix
+
+No module named 'tensorflow_examples'
+```
+`!pip install git+https://github.com/tensorflow/examples.git`
+`!pip install -U tfds-nightly`
+で解決。[issue](https://github.com/tensorflow/tensorflow/issues/42451)
+
+

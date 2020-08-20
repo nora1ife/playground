@@ -6,6 +6,7 @@
 - [pandas.DataFrame](https://www.tensorflow.org/tutorials/load_data/pandas_dataframe?hl=ja)
 - [畳み込みニューラルネットワーク](https://www.tensorflow.org/tutorials/images/cnn?hl=ja)
 - [画像分類](https://www.tensorflow.org/tutorials/images/classification?hl=ja)
+- [画像のセグメンテーション](https://www.tensorflow.org/tutorials/images/segmentation?hl=ja)
 
 ## classfication
 - ニューラルネットはなぜ0~1にスケールする必要があるのか

@@ -12,3 +12,4 @@
 - [tensorflow2.0でU-Netを実装する](https://qiita.com/hiro871_/items/871c76bf65b76ebe1dd0)
 - [セマンティック・セグメンテーションの基礎](https://jp.mathworks.com/content/dam/mathworks/mathworks-dot-com/company/events/webinar-cta/2459280_Basics_of_semantic_segmentation.pdf)
 - [U-NetでPascal VOC 2012の画像をSemantic Segmentationする (TensorFlow)](https://qiita.com/tktktks10/items/0f551aea27d2f62ef708)
+- [scikit-learn を用いた交差検証（Cross-validation）とハイパーパラメータのチューニング（grid search）](https://qiita.com/tomov3/items/039d4271ed30490edf7b)

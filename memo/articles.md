@@ -14,3 +14,7 @@
 - [U-NetでPascal VOC 2012の画像をSemantic Segmentationする (TensorFlow)](https://qiita.com/tktktks10/items/0f551aea27d2f62ef708)
 - [scikit-learn を用いた交差検証（Cross-validation）とハイパーパラメータのチューニング（grid search）](https://qiita.com/tomov3/items/039d4271ed30490edf7b)
 - [PIFuHDの使い方入門 – 2D人物画像から3Dモデル作成（Python・PyTorch・Colaboratory）](https://child-programmer.com/2d-to-3d/)
+- [「機械学習における解釈性（Interpretability in Machine Learning）」](https://www.ai-gakkai.or.jp/my-bookmark_vol33-no3/)
+- [「説明可能AI」](https://www.ai-gakkai.or.jp/my-bookmark_vol34-no4/)
+- [ディープラーニングの判断根拠を理解する手法](https://qiita.com/icoxfog417/items/8689f943fd1225e24358)
+- [Deep Learning: A Survey of Surveys](https://qiita.com/bukei_student/items/5d0ec0e7cc36d211e17a)

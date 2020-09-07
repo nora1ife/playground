@@ -18,3 +18,4 @@
 - [「説明可能AI」](https://www.ai-gakkai.or.jp/my-bookmark_vol34-no4/)
 - [ディープラーニングの判断根拠を理解する手法](https://qiita.com/icoxfog417/items/8689f943fd1225e24358)
 - [Deep Learning: A Survey of Surveys](https://qiita.com/bukei_student/items/5d0ec0e7cc36d211e17a)
+- [acc and val_acc don't change?](https://github.com/keras-team/keras/issues/1597)
